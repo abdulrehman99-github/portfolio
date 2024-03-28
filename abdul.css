@@ -1,0 +1,22 @@
+/* Define keyframes for the animation */
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0); /* Start and end position */
+    }
+    50% {
+        transform: translateY(-20px); /* Midway position */
+    }
+}
+
+/* Apply animation to the image */
+.moving-image {
+    animation: moveUpDown 2s infinite; /* Animation duration and repeat */
+}
+.myName{
+    transition: 1s;
+}
+
+.myName:hover {
+transform: scale(2) !important;
+color: aqua;
+}
